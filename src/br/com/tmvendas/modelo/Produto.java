@@ -8,7 +8,7 @@ import javax.persistence.InheritanceType;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="Cliente")
+@Table(name="Produto")
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 public class Produto {
     

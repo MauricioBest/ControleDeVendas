@@ -38,7 +38,7 @@ public class ProdutoDAO {
         sessao = HibernateUtil.getSessionFactory().openSession();
         sessao.beginTransaction();
         List<Produto> lista = new ArrayList<Produto>();
-        lista = sessao.createQuery("from Pessoa where DTYPE = 'Produto'").list();
+        lista = sessao.createQuery("from Produto").list();
         sessao.getTransaction().commit();
         sessao.close();
         return lista;
